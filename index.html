@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>sai aditya</h1>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBQUpIYvs0WKfP5IMD4TE2IWTvpb5U34Cc",
+    authDomain: "portfoliomanagement-16f09.firebaseapp.com",
+    databaseURL: "https://portfoliomanagement-16f09.firebaseio.com",
+    projectId: "portfoliomanagement-16f09",
+    storageBucket: "portfoliomanagement-16f09.appspot.com",
+    messagingSenderId: "505793158040",
+    appId: "1:505793158040:web:14b9466a349235ef8b69ed",
+    measurementId: "G-MRCWJ4R5RJ"
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+  // Initialize Firebase
+  setInterval(function(){
+      console.log("sai aditya")
+    var number = Math.floor(1000 + Math.random() * 9000).toString();
+    let formMessage = firebase.database().ref("FORM DATA");
+    formMessage.set({
+      age:number,
+    });
+ 
+  },10000)
+  
+</script>
+</body>
+</html>
