@@ -2,30 +2,26 @@
 const app = require("firebase/app")
 const data = require("firebase/database")
 
-// If you are using v7 or any earlier version of the JS SDK, you should import firebase using namespace import
-// import * as firebase from "firebase/app"
 
-// If you enabled Analytics in your project, add the Firebase SDK for Analytics
+  var firebaseConfig = {
+    apiKey: "AIzaSyAEsTEpMxEcx0psMjrETclmll8XqdMtLlw",
+    authDomain: "cloud-notification-32655.firebaseapp.com",
+    databaseURL: "https://cloud-notification-32655-default-rtdb.firebaseio.com",
+    projectId: "cloud-notification-32655",
+    storageBucket: "cloud-notification-32655.appspot.com",
+    messagingSenderId: "602486732316",
+    appId: "1:602486732316:web:2ba2ebf2d2733adb7491d9",
+    measurementId: "G-327MXCH15B"
+  };
+ 
 
 
-// Add the Firebase products that you want to use
-
-var firebaseConfig = {
-    apiKey: "AIzaSyBQUpIYvs0WKfP5IMD4TE2IWTvpb5U34Cc",
-    authDomain: "portfoliomanagement-16f09.firebaseapp.com",
-    databaseURL: "https://portfoliomanagement-16f09.firebaseio.com",
-    projectId: "portfoliomanagement-16f09",
-    storageBucket: "portfoliomanagement-16f09.appspot.com",
-    messagingSenderId: "505793158040",
-    appId: "1:505793158040:web:14b9466a349235ef8b69ed",
-    measurementId: "G-MRCWJ4R5RJ"
-};
 app.initializeApp(firebaseConfig);
 setInterval(function(){
   var number = Math.floor(1000 + Math.random() * 9000).toString();
-  let formMessage = app.database().ref("FORM DATA");
+  let formMessage = app.database().ref("noti");
   formMessage.set({
-    age:number,
+    changingNode:number,
   });
 
-},10000)
+},60000)
