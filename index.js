@@ -19,9 +19,17 @@ const data = require("firebase/database")
 app.initializeApp(firebaseConfig);
 setInterval(function(){
   var number = Math.floor(1000 + Math.random() * 9000).toString();
+  let formMessage = app.database().ref("Faltu");
+  formMessage.set({
+    accha:number,
+  });
+
+},20000)
+setInterval(function(){
+  var number = Math.floor(1000 + Math.random() * 9000).toString();
   let formMessage = app.database().ref("noti");
   formMessage.set({
     changingNode:number,
   });
 
-},60*1000)
+},60000)
