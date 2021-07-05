@@ -24,4 +24,4 @@ setInterval(function(){
     changingNode:number,
   });
 
-},60000)
+},10000)
