@@ -1,9 +1,10 @@
 // Firebase App (the core Firebase SDK) is always required and must be listed first
 const app = require("firebase/app")
+const data = require("firebase/database")
 const http = require('http');
 const fs = require('fs');
 const port = process.env.PORT || 3000;
-// const hostname = '127.0.0.1';
+const hostname = '127.0.0.1';
 // const port = 3000;
 var firebaseConfig = {
   apiKey: "AIzaSyAEsTEpMxEcx0psMjrETclmll8XqdMtLlw",
