@@ -19,15 +19,15 @@ var firebaseConfig = {
 
 
 
-app.initializeApp(firebaseConfig);
-setInterval(function () {
-  var number = Math.floor(1000 + Math.random() * 9000).toString();
-  let formMessage = app.database().ref("Faltu");
-  formMessage.set({
-    accha: number,
-  });
+// app.initializeApp(firebaseConfig);
+// setInterval(function () {
+//   var number = Math.floor(1000 + Math.random() * 9000).toString();
+//   let formMessage = app.database().ref("Faltu");
+//   formMessage.set({
+//     accha: number,
+//   });
 
-}, 20000)
+// }, 20000)
 setInterval(function () {
   var number = Math.floor(1000 + Math.random() * 9000).toString();
   let formMessage = app.database().ref("noti");
