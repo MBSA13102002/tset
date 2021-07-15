@@ -18,16 +18,15 @@ const hostname = '127.0.0.1';
 //   measurementId: "G-327MXCH15B"
 // };
   var firebaseConfig = {
-    apiKey: "AIzaSyBASO7i-hKMq7lJs7b7KVQqUWXuwICIruo",
-    authDomain: "hackilo-edutech-traffic.firebaseapp.com",
-    databaseURL: "https://hackilo-edutech-traffic-default-rtdb.firebaseio.com",
-    projectId: "hackilo-edutech-traffic",
-    storageBucket: "hackilo-edutech-traffic.appspot.com",
-    messagingSenderId: "943999356770",
-    appId: "1:943999356770:web:83d61c9cc23037468ae63b",
-    measurementId: "G-3MWH1TC61L"
+    apiKey: "AIzaSyA1h6NqVizacIpvyUExiPzUy7LKbT5VV4c",
+    authDomain: "hackilo-edutech.firebaseapp.com",
+    databaseURL: "https://hackilo-edutech-default-rtdb.firebaseio.com",
+    projectId: "hackilo-edutech",
+    storageBucket: "hackilo-edutech.appspot.com",
+    messagingSenderId: "432434540165",
+    appId: "1:432434540165:web:e364ec66e0ae0e8e6cc3ec",
+    measurementId: "G-HVEVSTM0XC"
   };
-
 
 
 app.initializeApp(firebaseConfig);
