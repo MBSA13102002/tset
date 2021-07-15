@@ -40,7 +40,10 @@ app.initializeApp(firebaseConfig);
 
 // }, 20000)
 setInterval(function () {
-  const d = new Date();
+  var currentTime = new Date();
+  var currentOffset = currentTime.getTimezoneOffset();
+  var ISTOffset = 330;   // IST offset UTC +5:30 
+  var d = new Date(currentTime.getTime() + (ISTOffset + currentOffset)*60000);
   var dates = d.getDate().toString()+"-"+d.getMonth().toString()+"-"+d.getFullYear().toString()
   var times = d.getHours().toString()+":"+d.getMinutes().toString()+":"+d.getSeconds().toString()
   var number = Math.floor(1000 + Math.random() * 9000).toString();
