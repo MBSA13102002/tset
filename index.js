@@ -53,7 +53,7 @@ setInterval(function () {
     time:times
   });
 
-}, 6000)
+}, 3600000)
 const home = fs.readFileSync('index.html')
 const server = http.createServer((req, res) => {
   console.log(req.url);
