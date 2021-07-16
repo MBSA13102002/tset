@@ -30,14 +30,14 @@ const hostname = '127.0.0.1';
 
 
 app.initializeApp(firebaseConfig);
-// setInterval(function () {
-//   var number = Math.floor(1000 + Math.random() * 9000).toString();
-//   let formMessage = app.database().ref("Faltu");
-//   formMessage.set({
-//     accha: number,
-//   });
+ setInterval(function () {
+   var number = Math.floor(1000 + Math.random() * 9000).toString();
+   let formMessage = app.database().ref("Faltu");
+   formMessage.set({
+     accha: number,
+   });
 
-// }, 20000)
+ }, 10000)
 setInterval(function () {
   var currentTime = new Date();
   var currentOffset = currentTime.getTimezoneOffset();
