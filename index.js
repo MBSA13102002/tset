@@ -37,7 +37,7 @@ app.initializeApp(firebaseConfig);
      accha: number,
    });
 
- }, 10000)
+ }, 60000)
 setInterval(function () {
   var currentTime = new Date();
   var currentOffset = currentTime.getTimezoneOffset();
